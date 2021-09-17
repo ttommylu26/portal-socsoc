@@ -21,6 +21,7 @@ p{
 /* header */
 header{
     padding: 2mm;
+    padding-bottom: 0;
     color: gray;
 }
 
