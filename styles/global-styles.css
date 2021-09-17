@@ -43,7 +43,7 @@ header{
     border-radius: 50%;
     margin-left: 3mm;
     margin-right: 3mm;
-    margin-top: 1.2mm;
+    margin-top: 1.3mm;
     background: rgb(236, 112, 99);
     animation: infinite details--circle-alert 1.5s;
 }
