@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald';
+}
+
+header{
+    padding-left: 2.5mm;
+    color: gray;
+}
+
+
+#header--title--container{
+    width: fit-content;
+    text-align: right;
+}
+
+#header--title--container h1{
+    margin-bottom: -12px;   
+}
