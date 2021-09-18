@@ -68,4 +68,16 @@ header{
     display: flex;
     align-items: flex-start;
     background-color: rgb(230, 230, 230);
+    border-radius: 0.1cm;
 }
+
+#section-1{
+    padding-left: 1.2cm;
+    padding-right: 1.2cm;
+}
+
+#section-1 small{
+    font-family: 'Montserrat';
+}
+
+
