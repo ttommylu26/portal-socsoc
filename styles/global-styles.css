@@ -42,29 +42,7 @@ header{
     /* header--title--container */
 /* header */
 
-#details--circle-alert{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-left: 3mm;
-    margin-right: 3mm;
-    margin-top: 1.3mm;
-    background: rgb(236, 112, 99);
-    animation: infinite details--circle-alert 1.5s;
-}
-
-@keyframes details--circle-alert{
-    0%{
-        box-shadow: 0px 0px 0px rgb(205, 97, 85);
-    }
-    50%{
-        box-shadow: 0px 0px 10px rgb(205, 97, 85);
-    }
-    100%{
-        box-shadow: 0px 0px 0px rgb(205, 97, 85);
-    }
-}
-
+/* details */
 #details{
     margin: 7mm;
     padding: 5mm;
@@ -75,6 +53,33 @@ header{
     border-radius: 0.1cm;
 }
 
+    /* details--circle--alert */
+    #details--circle-alert{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 3mm;
+        margin-right: 3mm;
+        margin-top: 1.3mm;
+        background: rgb(236, 112, 99);
+        animation: infinite details--circle-alert 1.5s;
+    }
+
+    @keyframes details--circle-alert{
+        0%{
+            box-shadow: 0px 0px 0px rgb(205, 97, 85);
+        }
+        50%{
+            box-shadow: 0px 0px 10px rgb(205, 97, 85);
+        }
+        100%{
+            box-shadow: 0px 0px 0px rgb(205, 97, 85);
+        }
+    }
+    /* details--circle--alert */
+/* details */
+
+/* section-1 */
 #section-1{
     padding-left: 1.2cm;
     padding-right: 1.2cm;
@@ -84,66 +89,87 @@ header{
     font-family: 'Montserrat';
 }
 
-#sunday-classes--container{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 3.5mm;
-}
-
-#sunday-classes--container a{
-    text-decoration-line: none;
-}
-
-#sunday-clase{
-    max-width: 7cm;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    transition: all .2s;
-    margin-right: 3mm;
-    margin-bottom: 3mm;
-}
-
-#sunday-clase:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    transform: translateX(-1%);
-    cursor: pointer;
-}
-
-#sunday-clase img{
-    width: 100%;
-}
-
-#sunday-classes--container--text-container{
-    padding: 2mm;
-}
-
-#sunday-classes--container--text-container p{
-    font-weight: 800;
-}
-
-    /* sunday-clase-3 */
-    #sunday-clase-3--modal--checkbox{
-        display: none;
-    }
-
-    #sunday-clase-3--modal--checkbox:checked ~ #sunday-clase-3--modal{
+    /* sunday-classes */
+    #sunday-classes--container{
+        padding-top: 3.5mm;
         display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
 
-    #sunday-clase-3--modal{
-        position: fixed; top: 0; left: 0;
+    #sunday-classes--container a{
+        text-decoration-line: none;
+    }
+
+    #sunday-class{
+        max-width: 7cm;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        transition: all .2s;
+        margin-right: 3mm;
+        margin-bottom: 3.5mm;
+    }
+
+    #sunday-class:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: translateX(-1%);
+        cursor: pointer;
+    }
+
+    #sunday-class img{
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        animation: sunday-clase-3--modal 1.5s;
-        display: none;
     }
 
-    @keyframes sunday-clase-3--modal{
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 100%;
-        }
+    #sunday-classes--container--text-container{
+        padding: 2mm;
     }
+
+    #sunday-classes--container--text-container p{
+        font-weight: 800;
+    }
+
+        /* sunday-clase-3--modal */
+        #sunday-class-3--modal--checkbox{
+            display: none;
+        }
+
+        #sunday-class-3--modal--checkbox:checked ~ #sunday-class-3--modal{
+            display: flex;
+        }
+
+        #sunday-class-3--modal{
+            position: fixed; top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            animation: sunday-class-3--modal 1.5s;
+            display: none;
+        }
+
+        @keyframes sunday-class-3--modal{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 100%;
+            }
+        }
+        /* sunday-class-3--modal */
+    /* sunday-classes */
+/* section-1 */
+
+/* footer */
+footer{
+    font-family: 'Montserrat';
+    text-align: right;
+    padding: 5mm;
+    background-color: rgb(36, 36, 36);
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    opacity: 80%;
+}
